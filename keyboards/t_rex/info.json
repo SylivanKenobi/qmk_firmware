@@ -24,9 +24,11 @@
         "pid": "0x0000",
         "vid": "0xFEED"
     },
+    "ws2812": {
+        "pin": "F7"
+    },
     "rgblight": {
         "led_count": 32,
-        "pin": "F7",
         "hue_steps": 10,
         "max_brightness": 100,
         "saturation_steps": 17,
