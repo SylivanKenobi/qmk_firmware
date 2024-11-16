@@ -22,19 +22,10 @@ bool encoder_update_kb(uint8_t index, bool clockwise) {
         return false; 
     }
 
-    if (index == 1) {
-      if (clockwise) {
-          tap_code(KC_VOLU);
-      } else {
-          tap_code(KC_VOLD);
-      }
-    }
-    if (index == 0) {
-      if (clockwise) {
-          tap_code(KC_WH_U);
-      } else {
-          tap_code(KC_WH_D);
-      }
+    if (clockwise) {
+        tap_code(KC_VOLU);
+    } else {
+        tap_code(KC_VOLD);
     }
     return true;
 }
